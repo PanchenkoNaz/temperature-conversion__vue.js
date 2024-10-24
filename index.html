@@ -18,15 +18,15 @@
     <div id="app" class="wrapper">
         <div class="container">
             <label for="celsius">Celsius</label>
-            <input type="number" v-model="celsius" @input="convertToFahrenheit">
+            <input type="number" v-model="celsius" @input="convertToFahrenheitKelvin">
         </div>
         <div class="container">
             <label for="fahrenheit">Fahrenheit</label>
-            <input type="number" v-model="fahrenheit" @input="convertToCelsius">
+            <input type="number" v-model="fahrenheit" @input="convertToCelsiusKelvin">
         </div>
         <div class="container">
             <label for="kelvin">Kelvin</label>
-            <input type="number" v-model="kelvin" @input="convertToKelvin">
+            <input type="number" v-model="kelvin" @input="convertToCelsiusFahrenheit">
         </div>
     </div>
 
