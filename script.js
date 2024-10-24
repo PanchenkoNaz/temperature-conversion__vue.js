@@ -2,21 +2,26 @@ new Vue({
     el: '#app',
     data: {
         celsius: null,
-        fahrenheit: null
+        fahrenheit: null,
+        kelvin: null
     },
     methods: {
-        convertToFahrenheit() {
-            if (this.celsius !== null) {
+        convertToFahrenheitKelvin() {
+            if (!isNaN(this.celsius)) {
                 this.fahrenheit = (parseFloat(this.celsius) * 9 / 5) + 32;
-            } else {
-                this.fahrenheit = null;
+                this.kelvin = parseFloat(this.celsius) + 273.15;
             }
         },
-        convertToCelsius() {
-            if (this.fahrenheit !== null) {
+        convertToCelsiusKelvin() {
+            if (!isNaN(this.fahrenheit)) {
                 this.celsius = (parseFloat(this.fahrenheit) - 32) * 5 / 9;
-            } else {
-                this.celsius = null;
+                this.kelvin = parseFloat(this.celsius) + 273.15;
+            }
+        },
+        convertToCelsiusFahrenheit() {
+            if (!isNaN(this.kelvin)) {
+                this.celsius = parseFloat(this.kelvin) - 273.15;
+                this.fahrenheit = (this.celsius * 9 / 5) + 32;
             }
         }
     }
