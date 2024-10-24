@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-    width: 450px;
+    width: 650px;
     background-color: #ffffff;
     padding: 70px 40px;
     position: absolute;
@@ -24,10 +24,12 @@ body {
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .container {
     width: 45%;
+    margin-bottom: 20px;
 }
 
 input {
