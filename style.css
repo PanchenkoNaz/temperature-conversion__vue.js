@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #3164ff;
+    background-color: #8c27e6;
 }
 
 .wrapper {
@@ -43,5 +43,5 @@ input {
 }
 
 input:focus {
-    border-color: #3164ff;
+    border-color: #8c27e6;
 }
